@@ -8,21 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		813BA7942BF041A1005E10B0 /* PedoptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7932BF041A1005E10B0 /* PedoptApp.swift */; };
-		813BA7962BF041A1005E10B0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7952BF041A1005E10B0 /* ContentView.swift */; };
+		813BA7962BF041A1005E10B0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7952BF041A1005E10B0 /* OnboardingView.swift */; };
 		813BA7982BF041A2005E10B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7972BF041A2005E10B0 /* Assets.xcassets */; };
 		813BA79B2BF041A2005E10B0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813BA79A2BF041A2005E10B0 /* Preview Assets.xcassets */; };
 		813BA79D2BF041A2005E10B0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA79C2BF041A2005E10B0 /* Persistence.swift */; };
 		813BA7A02BF041A2005E10B0 /* Pedopt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 813BA79E2BF041A2005E10B0 /* Pedopt.xcdatamodeld */; };
+		813BA7A72BF05B17005E10B0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7A62BF05B17005E10B0 /* LoginView.swift */; };
+		813BA7AC2BF10D44005E10B0 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7AB2BF10D44005E10B0 /* RegisterView.swift */; };
+		813BA7AF2BF11A91005E10B0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7AE2BF11A91005E10B0 /* MainView.swift */; };
+		813BA7B22BF11DC2005E10B0 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 813BA7B12BF11DC2005E10B0 /* FirebaseAuth */; };
+		813BA7B42BF11DC2005E10B0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 813BA7B32BF11DC2005E10B0 /* FirebaseFirestore */; };
+		813BA7B82BF1C83B005E10B0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7B72BF1C83B005E10B0 /* HomeView.swift */; };
+		813BA7BD2BF1CA66005E10B0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7BC2BF1CA66005E10B0 /* MessageView.swift */; };
+		813BA7BF2BF1CA73005E10B0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7BE2BF1CA73005E10B0 /* FavoritesView.swift */; };
+		813BA7C12BF1CA80005E10B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7C02BF1CA80005E10B0 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		813BA7902BF041A1005E10B0 /* Pedopt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pedopt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813BA7932BF041A1005E10B0 /* PedoptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedoptApp.swift; sourceTree = "<group>"; };
-		813BA7952BF041A1005E10B0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		813BA7952BF041A1005E10B0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		813BA7972BF041A2005E10B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813BA79A2BF041A2005E10B0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		813BA79C2BF041A2005E10B0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		813BA79F2BF041A2005E10B0 /* Pedopt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pedopt.xcdatamodel; sourceTree = "<group>"; };
+		813BA7A62BF05B17005E10B0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		813BA7AB2BF10D44005E10B0 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		813BA7AE2BF11A91005E10B0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		813BA7B72BF1C83B005E10B0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		813BA7BC2BF1CA66005E10B0 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		813BA7BE2BF1CA73005E10B0 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		813BA7C02BF1CA80005E10B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813BA7B22BF11DC2005E10B0 /* FirebaseAuth in Frameworks */,
+				813BA7B42BF11DC2005E10B0 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				813BA7932BF041A1005E10B0 /* PedoptApp.swift */,
-				813BA7952BF041A1005E10B0 /* ContentView.swift */,
+				813BA7952BF041A1005E10B0 /* OnboardingView.swift */,
+				813BA7A92BF069B2005E10B0 /* Login */,
+				813BA7AA2BF10D2D005E10B0 /* Register */,
+				813BA7AD2BF11A75005E10B0 /* Pages */,
+				813BA7B52BF16344005E10B0 /* Core Data */,
 				813BA7972BF041A2005E10B0 /* Assets.xcassets */,
-				813BA79C2BF041A2005E10B0 /* Persistence.swift */,
-				813BA79E2BF041A2005E10B0 /* Pedopt.xcdatamodeld */,
 				813BA7992BF041A2005E10B0 /* Preview Content */,
 			);
 			path = Pedopt;
@@ -71,6 +91,75 @@
 				813BA79A2BF041A2005E10B0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		813BA7A92BF069B2005E10B0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7A62BF05B17005E10B0 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		813BA7AA2BF10D2D005E10B0 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7AB2BF10D44005E10B0 /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		813BA7AD2BF11A75005E10B0 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7AE2BF11A91005E10B0 /* MainView.swift */,
+				813BA7B62BF1C806005E10B0 /* Home */,
+				813BA7B92BF1CA3B005E10B0 /* Message */,
+				813BA7BA2BF1CA42005E10B0 /* Favorites */,
+				813BA7BB2BF1CA48005E10B0 /* Profile */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		813BA7B52BF16344005E10B0 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				813BA79C2BF041A2005E10B0 /* Persistence.swift */,
+				813BA79E2BF041A2005E10B0 /* Pedopt.xcdatamodeld */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		813BA7B62BF1C806005E10B0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7B72BF1C83B005E10B0 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		813BA7B92BF1CA3B005E10B0 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7BC2BF1CA66005E10B0 /* MessageView.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		813BA7BA2BF1CA42005E10B0 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7BE2BF1CA73005E10B0 /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		813BA7BB2BF1CA48005E10B0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7C02BF1CA80005E10B0 /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +178,10 @@
 			dependencies = (
 			);
 			name = Pedopt;
+			packageProductDependencies = (
+				813BA7B12BF11DC2005E10B0 /* FirebaseAuth */,
+				813BA7B32BF11DC2005E10B0 /* FirebaseFirestore */,
+			);
 			productName = Pedopt;
 			productReference = 813BA7902BF041A1005E10B0 /* Pedopt.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +210,9 @@
 				Base,
 			);
 			mainGroup = 813BA7872BF041A1005E10B0;
+			packageReferences = (
+				813BA7B02BF11DC2005E10B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 813BA7912BF041A1005E10B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,9 +239,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813BA7BF2BF1CA73005E10B0 /* FavoritesView.swift in Sources */,
 				813BA79D2BF041A2005E10B0 /* Persistence.swift in Sources */,
-				813BA7962BF041A1005E10B0 /* ContentView.swift in Sources */,
+				813BA7AF2BF11A91005E10B0 /* MainView.swift in Sources */,
+				813BA7962BF041A1005E10B0 /* OnboardingView.swift in Sources */,
+				813BA7BD2BF1CA66005E10B0 /* MessageView.swift in Sources */,
 				813BA7942BF041A1005E10B0 /* PedoptApp.swift in Sources */,
+				813BA7AC2BF10D44005E10B0 /* RegisterView.swift in Sources */,
+				813BA7B82BF1C83B005E10B0 /* HomeView.swift in Sources */,
+				813BA7A72BF05B17005E10B0 /* LoginView.swift in Sources */,
+				813BA7C12BF1CA80005E10B0 /* ProfileView.swift in Sources */,
 				813BA7A02BF041A2005E10B0 /* Pedopt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +455,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		813BA7B02BF11DC2005E10B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.25.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		813BA7B12BF11DC2005E10B0 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813BA7B02BF11DC2005E10B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		813BA7B32BF11DC2005E10B0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 813BA7B02BF11DC2005E10B0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		813BA79E2BF041A2005E10B0 /* Pedopt.xcdatamodeld */ = {
