@@ -22,6 +22,14 @@
 		813BA7BD2BF1CA66005E10B0 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7BC2BF1CA66005E10B0 /* MessageView.swift */; };
 		813BA7BF2BF1CA73005E10B0 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7BE2BF1CA73005E10B0 /* FavoritesView.swift */; };
 		813BA7C12BF1CA80005E10B0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7C02BF1CA80005E10B0 /* ProfileView.swift */; };
+		813BA7CA2BF2939C005E10B0 /* Assistant-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C32BF2939C005E10B0 /* Assistant-Medium.ttf */; };
+		813BA7CB2BF2939C005E10B0 /* Assistant-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C42BF2939C005E10B0 /* Assistant-Light.ttf */; };
+		813BA7CC2BF2939C005E10B0 /* Assistant-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C52BF2939C005E10B0 /* Assistant-ExtraLight.ttf */; };
+		813BA7CD2BF2939C005E10B0 /* Assistant-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C62BF2939C005E10B0 /* Assistant-ExtraBold.ttf */; };
+		813BA7CE2BF2939C005E10B0 /* Assistant-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C72BF2939C005E10B0 /* Assistant-Regular.ttf */; };
+		813BA7CF2BF2939C005E10B0 /* Assistant-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C82BF2939C005E10B0 /* Assistant-Bold.ttf */; };
+		813BA7D02BF2939C005E10B0 /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C92BF2939C005E10B0 /* Assistant-SemiBold.ttf */; };
+		813BA7D32BF32E6E005E10B0 /* PetCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7D22BF32E6E005E10B0 /* PetCategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,15 @@
 		813BA7BC2BF1CA66005E10B0 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		813BA7BE2BF1CA73005E10B0 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		813BA7C02BF1CA80005E10B0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		813BA7C32BF2939C005E10B0 /* Assistant-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Medium.ttf"; sourceTree = "<group>"; };
+		813BA7C42BF2939C005E10B0 /* Assistant-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Light.ttf"; sourceTree = "<group>"; };
+		813BA7C52BF2939C005E10B0 /* Assistant-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraLight.ttf"; sourceTree = "<group>"; };
+		813BA7C62BF2939C005E10B0 /* Assistant-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-ExtraBold.ttf"; sourceTree = "<group>"; };
+		813BA7C72BF2939C005E10B0 /* Assistant-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Regular.ttf"; sourceTree = "<group>"; };
+		813BA7C82BF2939C005E10B0 /* Assistant-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-Bold.ttf"; sourceTree = "<group>"; };
+		813BA7C92BF2939C005E10B0 /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
+		813BA7D12BF2953C005E10B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		813BA7D22BF32E6E005E10B0 /* PetCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +90,7 @@
 		813BA7922BF041A1005E10B0 /* Pedopt */ = {
 			isa = PBXGroup;
 			children = (
+				813BA7D12BF2953C005E10B0 /* Info.plist */,
 				813BA7932BF041A1005E10B0 /* PedoptApp.swift */,
 				813BA7952BF041A1005E10B0 /* OnboardingView.swift */,
 				813BA7A92BF069B2005E10B0 /* Login */,
@@ -80,6 +98,7 @@
 				813BA7AD2BF11A75005E10B0 /* Pages */,
 				813BA7B52BF16344005E10B0 /* Core Data */,
 				813BA7972BF041A2005E10B0 /* Assets.xcassets */,
+				813BA7C22BF2936A005E10B0 /* Fonts */,
 				813BA7992BF041A2005E10B0 /* Preview Content */,
 			);
 			path = Pedopt;
@@ -134,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				813BA7B72BF1C83B005E10B0 /* HomeView.swift */,
+				813BA7D22BF32E6E005E10B0 /* PetCategoryModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -160,6 +180,20 @@
 				813BA7C02BF1CA80005E10B0 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		813BA7C22BF2936A005E10B0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7C82BF2939C005E10B0 /* Assistant-Bold.ttf */,
+				813BA7C62BF2939C005E10B0 /* Assistant-ExtraBold.ttf */,
+				813BA7C52BF2939C005E10B0 /* Assistant-ExtraLight.ttf */,
+				813BA7C42BF2939C005E10B0 /* Assistant-Light.ttf */,
+				813BA7C32BF2939C005E10B0 /* Assistant-Medium.ttf */,
+				813BA7C72BF2939C005E10B0 /* Assistant-Regular.ttf */,
+				813BA7C92BF2939C005E10B0 /* Assistant-SemiBold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +261,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813BA7CA2BF2939C005E10B0 /* Assistant-Medium.ttf in Resources */,
 				813BA79B2BF041A2005E10B0 /* Preview Assets.xcassets in Resources */,
+				813BA7CC2BF2939C005E10B0 /* Assistant-ExtraLight.ttf in Resources */,
+				813BA7CB2BF2939C005E10B0 /* Assistant-Light.ttf in Resources */,
+				813BA7D02BF2939C005E10B0 /* Assistant-SemiBold.ttf in Resources */,
+				813BA7CE2BF2939C005E10B0 /* Assistant-Regular.ttf in Resources */,
 				813BA7982BF041A2005E10B0 /* Assets.xcassets in Resources */,
+				813BA7CF2BF2939C005E10B0 /* Assistant-Bold.ttf in Resources */,
+				813BA7CD2BF2939C005E10B0 /* Assistant-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				813BA7BF2BF1CA73005E10B0 /* FavoritesView.swift in Sources */,
+				813BA7D32BF32E6E005E10B0 /* PetCategoryModel.swift in Sources */,
 				813BA79D2BF041A2005E10B0 /* Persistence.swift in Sources */,
 				813BA7AF2BF11A91005E10B0 /* MainView.swift in Sources */,
 				813BA7962BF041A1005E10B0 /* OnboardingView.swift in Sources */,
@@ -386,6 +428,7 @@
 				DEVELOPMENT_TEAM = 7L2B356GHZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pedopt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -415,6 +458,7 @@
 				DEVELOPMENT_TEAM = 7L2B356GHZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pedopt/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
