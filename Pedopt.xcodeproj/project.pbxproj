@@ -30,6 +30,10 @@
 		813BA7CF2BF2939C005E10B0 /* Assistant-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C82BF2939C005E10B0 /* Assistant-Bold.ttf */; };
 		813BA7D02BF2939C005E10B0 /* Assistant-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7C92BF2939C005E10B0 /* Assistant-SemiBold.ttf */; };
 		813BA7D32BF32E6E005E10B0 /* PetCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7D22BF32E6E005E10B0 /* PetCategoryModel.swift */; };
+		813BA7D52BF410D7005E10B0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7D42BF410D7005E10B0 /* LoginViewModel.swift */; };
+		813BA7D92BF412BD005E10B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 813BA7D82BF412BD005E10B0 /* GoogleService-Info.plist */; };
+		813BA7DB2BF4138B005E10B0 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7DA2BF4138B005E10B0 /* RegisterViewModel.swift */; };
+		813BA7DE2BF4668F005E10B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813BA7DD2BF4668F005E10B0 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		813BA7C92BF2939C005E10B0 /* Assistant-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assistant-SemiBold.ttf"; sourceTree = "<group>"; };
 		813BA7D12BF2953C005E10B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		813BA7D22BF32E6E005E10B0 /* PetCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCategoryModel.swift; sourceTree = "<group>"; };
+		813BA7D42BF410D7005E10B0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		813BA7D82BF412BD005E10B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		813BA7DA2BF4138B005E10B0 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		813BA7DD2BF4668F005E10B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +104,10 @@
 				813BA7A92BF069B2005E10B0 /* Login */,
 				813BA7AA2BF10D2D005E10B0 /* Register */,
 				813BA7AD2BF11A75005E10B0 /* Pages */,
+				813BA7DC2BF46676005E10B0 /* Extension */,
 				813BA7B52BF16344005E10B0 /* Core Data */,
 				813BA7972BF041A2005E10B0 /* Assets.xcassets */,
+				813BA7D82BF412BD005E10B0 /* GoogleService-Info.plist */,
 				813BA7C22BF2936A005E10B0 /* Fonts */,
 				813BA7992BF041A2005E10B0 /* Preview Content */,
 			);
@@ -116,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				813BA7A62BF05B17005E10B0 /* LoginView.swift */,
+				813BA7D42BF410D7005E10B0 /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				813BA7AB2BF10D44005E10B0 /* RegisterView.swift */,
+				813BA7DA2BF4138B005E10B0 /* RegisterViewModel.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -196,6 +208,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		813BA7DC2BF46676005E10B0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				813BA7DD2BF4668F005E10B0 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,6 +286,7 @@
 				813BA7CC2BF2939C005E10B0 /* Assistant-ExtraLight.ttf in Resources */,
 				813BA7CB2BF2939C005E10B0 /* Assistant-Light.ttf in Resources */,
 				813BA7D02BF2939C005E10B0 /* Assistant-SemiBold.ttf in Resources */,
+				813BA7D92BF412BD005E10B0 /* GoogleService-Info.plist in Resources */,
 				813BA7CE2BF2939C005E10B0 /* Assistant-Regular.ttf in Resources */,
 				813BA7982BF041A2005E10B0 /* Assets.xcassets in Resources */,
 				813BA7CF2BF2939C005E10B0 /* Assistant-Bold.ttf in Resources */,
@@ -288,6 +309,9 @@
 				813BA7BD2BF1CA66005E10B0 /* MessageView.swift in Sources */,
 				813BA7942BF041A1005E10B0 /* PedoptApp.swift in Sources */,
 				813BA7AC2BF10D44005E10B0 /* RegisterView.swift in Sources */,
+				813BA7D52BF410D7005E10B0 /* LoginViewModel.swift in Sources */,
+				813BA7DB2BF4138B005E10B0 /* RegisterViewModel.swift in Sources */,
+				813BA7DE2BF4668F005E10B0 /* Extensions.swift in Sources */,
 				813BA7B82BF1C83B005E10B0 /* HomeView.swift in Sources */,
 				813BA7A72BF05B17005E10B0 /* LoginView.swift in Sources */,
 				813BA7C12BF1CA80005E10B0 /* ProfileView.swift in Sources */,

@@ -9,13 +9,12 @@ import SwiftUI
 
 struct RegisterView: View {
     @Environment(\.dismiss) private var dismiss
-    @State private var firstTextField = ""
-    @State private var secondTextField = ""
-    @State private var emailTextField = ""
-    @State private var passwordTextField = ""
-    @State private var confirmPasswordTextField = ""
-    @State private var contactTextField = ""
+    
+    @ObservedObject var viewModel = RegisterViewModel()
+    
     @State private var showLoginPage = false
+    @State private var isEmailValid : Bool = true
+
     
     var body: some View {
         GeometryReader{ geo in
@@ -30,7 +29,7 @@ struct RegisterView: View {
                     }
                     .padding(.leading, 15)
                     Text("Create Account")
-                        .font(.system(size: 25))
+                        .font(.system(size: 23))
                         .frame(maxWidth: .infinity)
                         .foregroundStyle(.white)
                         .fontWeight(.semibold)
@@ -40,92 +39,106 @@ struct RegisterView: View {
                 .padding(.top,40)
                 .frame(height: 130)
                 .background(.accentPurple)
+                Text("Get Started")
+                    .font(.system(size: 23))
+                    .fontWeight(.bold)
+                    .padding(.top,30)
                 HStack{
-                    TextField("First Name", text: $firstTextField)
+                    TextField("First Name", text: $viewModel.first)
                         .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.5)
-                        .textContentType(.emailAddress)
+                        .textContentType(.givenName)
                         .textInputAutocapitalization(.never)
                         .padding()
                         .padding(.horizontal,10)
                         .foregroundStyle(.black)
                         .frame(width: geo.size.width/2.8, height: 60)
                         .overlay{
-                            RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)
+                            RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1).fill(viewModel.first == "" ? .black : Color(viewModel.borderFirst))
                         }
                         .padding(.vertical,10)
                     Spacer()
-                    TextField("Last Name", text: $secondTextField)
+                    TextField("Last Name", text: $viewModel.last)
                         .multilineTextAlignment(.leading)
                         .minimumScaleFactor(0.5)
-                        .textContentType(.emailAddress)
+                        .textContentType(.familyName)
                         .textInputAutocapitalization(.never)
                         .padding()
                         .padding(.horizontal,10)
                         .foregroundStyle(.black)
                         .frame(width: geo.size.width/2.8, height: 60)
                         .overlay{
-                            RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)
+                            RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1).fill(viewModel.last == "" ? .black : Color(viewModel.borderLast))
                         }
                         .padding(.vertical,10)
                 }
                 .frame(width: geo.size.width/1.3)
-                .padding(.top,30)
+                .padding(.top,10)
                 
-                TextField("Email", text: $emailTextField)
+                TextField("Email", text: $viewModel.email)
                     .multilineTextAlignment(.leading)
                     .textContentType(.emailAddress)
                     .textInputAutocapitalization(.never)
+                    .keyboardType(.emailAddress)
+                    .autocorrectionDisabled()
                     .padding()
                     .padding(.horizontal,10)
                     .foregroundStyle(.black)
                     .frame(width: geo.size.width/1.3, height: 60)
                     .overlay{
-                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)
+                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1).fill(viewModel.email == "" ? .black : Color(viewModel.borderEmail))
                     }
                     .padding(.bottom,10)
-                SecureField("Password", text: $passwordTextField)
+                SecureField("Password", text: $viewModel.password)
                     .multilineTextAlignment(.leading)
-                    .textContentType(.emailAddress)
+                    .textContentType(.newPassword)
                     .textInputAutocapitalization(.never)
                     .padding()
                     .padding(.horizontal,10)
                     .foregroundStyle(.black)
                     .frame(width: geo.size.width/1.3, height: 60)
                     .overlay{
-                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)
-                    }
-                    .padding(.bottom,10)
-                
-                SecureField("Confirm Password", text: $confirmPasswordTextField)
-                    .multilineTextAlignment(.leading)
-                    .textContentType(.emailAddress)
-                    .textInputAutocapitalization(.never)
-                    .padding()
-                    .padding(.horizontal,10)
-                    .foregroundStyle(.black)
-                    .frame(width: geo.size.width/1.3, height: 60)
-                    .overlay{
-                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)
+                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1).fill(viewModel.password == "" ? .black : Color(viewModel.borderPass))
                     }
                     .padding(.bottom,10)
                 
-                TextField("Contact", text: $contactTextField)
+                SecureField("Confirm Password", text: $viewModel.confirmPass)
                     .multilineTextAlignment(.leading)
-                    .textContentType(.emailAddress)
+                    .textContentType(.newPassword)
                     .textInputAutocapitalization(.never)
                     .padding()
                     .padding(.horizontal,10)
                     .foregroundStyle(.black)
                     .frame(width: geo.size.width/1.3, height: 60)
                     .overlay{
-                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1)
+                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1).fill(viewModel.confirmPass == "" ? .black : Color(viewModel.borderConfPass))
                     }
-                    .padding(.bottom,30)
+                    .padding(.bottom,10)
+                
+                TextField("Contact", text: $viewModel.contact)
+                    .multilineTextAlignment(.leading)
+                    .textContentType(.telephoneNumber)
+                    .keyboardType(.numberPad)
+                    .textInputAutocapitalization(.never)
+                    .padding()
+                    .padding(.horizontal,10)
+                    .foregroundStyle(.black)
+                    .frame(width: geo.size.width/1.3, height: 60)
+                    .overlay{
+                        RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 1).fill(viewModel.contact == "" ? .black : Color(viewModel.borderContact))
+                    }
+                VStack{
+                        Text("\(viewModel.error)")
+                            .foregroundStyle(.red)
+                }
+                .frame(height: 30)
+                .padding(.bottom,10)
                 Button{
-                    
+                    viewModel.checkAllFieldsFilled()
+                    if viewModel.filledAll {
+                        showLoginPage = true
+                    }
                 } label: {
-                    
                     Text("Register")
                         .font(.title2)
                         .foregroundStyle(.white)

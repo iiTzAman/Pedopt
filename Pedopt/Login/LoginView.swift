@@ -12,8 +12,8 @@ struct LoginView: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var showIconAnimation = false
-    @State private var emailTextField = ""
-    @State private var passwordTextField = ""
+    @State private var emailTextField = "123@gmail.com"
+    @State private var passwordTextField = "123456"
     @State private var rememberMeToggle = false
     @State private var goToRegister = false
     @State private var goToMain = false
